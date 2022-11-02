@@ -9,8 +9,8 @@ public class Find_position_of_element_in_infinite_sorted_array{
             a[i] = sc.nextInt();
         }
         int find = sc.nextInt();
-        int end = findEnd(a, find);
-        System.out.println(FindPos(a , find , 0 , end));
+        int pos = findEnd(a, find);
+        System.out.println(pos);
         sc.close();
     }
     public static int findEnd(int a[] , int find){
@@ -20,7 +20,7 @@ public class Find_position_of_element_in_infinite_sorted_array{
             start = end;
             end = start*2;
         }
-        return end;
+        return FindPos(a, find, start, end);
     }
     public static int FindPos(int a[] , int find , int start , int end){
         int res = -1;
