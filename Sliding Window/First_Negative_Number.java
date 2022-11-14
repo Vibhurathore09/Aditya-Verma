@@ -11,7 +11,6 @@ public class First_Negative_Number {
         }
         int k = sc.nextInt();
         sc.close();
-
         ArrayDeque<Integer> queue = new ArrayDeque<>();
         int ans[] = new int[n-k+1];
         int i =0;
@@ -32,10 +31,9 @@ public class First_Negative_Number {
                     queue.poll();
                 }
                 i++;
-            }
-            j++;
+                j++;
+            } 
         }
         System.out.println(queue);
-        
     }
 }
